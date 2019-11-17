@@ -1,0 +1,51 @@
+{
+  "urn": "urn:uuid:f7ecf240-0961-11ea-9b25-271aebc58aeb",
+  "version": "0.0.1",
+  "name": "DHIS2 Mediator",
+  "description": "Pushes and pulls data to and from DHIS2",
+  "defaultChannelConfig": [
+    {
+      "name": "DHIS2 Mediator",
+      "urlPattern": "channelPath",
+      "alerts": [],
+      "txRerunAcl": [],
+      "txViewFullAcl": [],
+      "txViewAcl": [],
+      "properties": [],
+      "matchContentTypes": [],
+      "routes": [
+        {
+          "name": "DHIS2 Mediator Route",
+          "host": "localhost",
+          "port": "4000",
+          "primary": true,
+          "type": "http"
+        }
+      ],
+      "allow": ["admin"],
+      "type": "http"
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "DHIS2 Mediator Route",
+      "host": "localhost",
+      "path": "/",
+      "port": "4000",
+      "primary": true,
+      "type": "http"
+    }
+  ],
+  "configDefs": [
+    {
+      "param": "upstreamUrl",
+      "displayName": "Upstream URL",
+      "description": "The URL of the service upstream of the mediator",
+      "type": "string",
+      "template": []
+    }
+  ],
+  "config": {
+    "upstreamUrl": "http://ugisl.mets.or.ug:7001"
+  }
+}
