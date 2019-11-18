@@ -46,13 +46,6 @@
     }
   ],
   "config": {
-    "upstreamUrl": "http://ugisl.mets.or.ug:7001"
-  },
-  "configAuth": {
-    "dhis2server": "hmis-dev.health.go.ug",
-    "endpoint": "/api/dataValueSets",
-    "username": "mets.mkaye",
-    "password": "METS4321!"
-
+    "upstreamUrl": "http://sampleApplication1:7001"
   }
 }
